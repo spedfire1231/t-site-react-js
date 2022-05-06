@@ -1,0 +1,23 @@
+#root {
+    background: linear-gradient(to right, lightblue, lightgreen);
+    width: 100%;
+    height: inherit;
+    box-sizing: inherit;
+    flex-direction: column;
+    bottom: 0;
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    font-style: oblique 40deg;
+    font-family: cursive, serif;
+}
+
+.App {
+    width: auto;
+}
+
+#h3 {
+    font-style: inherit;
+}
+
