@@ -13,6 +13,7 @@ const SearchByName = () => {
     const filteredItems = useMemo(() => {
         return items.filter(item => item.title.includes(value))
     }, [value])
+    
     const onChangeValue = (e) => {
         setValue(e.target.value)
     }
@@ -31,7 +32,7 @@ const SearchByName = () => {
         <p className='mb-0'>
         <li>Стандартный префикс бота - !</li>
         </p>
-        <p><li>Всего команд - <strong>54</strong></li></p>
+        <p><li>Всего команд - <strong>56</strong></li></p>
     </Alert>
         <MyInput type='text' value={value} onChange={onChangeValue} placeholder='Поиск по названию...' style={{display: 'flex', marginTop: '2rem'}}/>
         <Button variant='info' href='/category' size='sm' style={{width: 'auto', justifyContent: 'center', marginTop: '2rem', marginLeft: '15px'}}>Перейти к поиску по разделам</Button>
@@ -55,7 +56,7 @@ const SearchByName = () => {
         <p className='mb-0'>
         <li>Стандартный префикс бота - !</li>
         </p>
-        <p><li>Всего команд - <strong>54</strong></li></p>
+        <p><li>Всего команд - <strong>56</strong></li></p>
         </Alert>
             <MyInput type='text' value={value} onChange={onChangeValue} placeholder='Поиск по названию...' style={{display: 'flex', marginTop: '2rem'}}/>
             <Nav.Link>

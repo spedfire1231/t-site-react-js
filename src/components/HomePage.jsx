@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import { Button, Card, CardGroup, Col, Container, Row } from 'react-bootstrap';
 import Slider from './Slider';
 import suport from './images/support1.jpg'
 import hour from './images/24h.jpg'
@@ -14,7 +14,7 @@ const HomePage = () => {
 
 
             <h1 style={{justifyContent: 'center', paddingTop: '2rem', paddingBottom: '2rem', display: 'flex'}}>Преимущества Бота</h1>
-            <Col style={{justifyContent: 'center', display: 'flex'}}>
+            <CardGroup style={{display: 'flex'}}>
                 <Card style={{width: '20rem', justifyContent: 'center'}}>
                     <Card.Img variant='top' src={suport} />
                     <Card.Body>
@@ -26,9 +26,7 @@ const HomePage = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-            </Col>
 
-            <Col style={{justifyContent: 'center', display: 'flex'}}>
                 <Card style={{width: '20rem' , justifyContent: 'center', display: 'flex'}}>
                     <Card.Img variant='top' src={call} />
                     <Card.Body>
@@ -40,9 +38,7 @@ const HomePage = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-            </Col>
 
-            <Col style={{justifyContent: 'center', display: 'flex'}}>
                 <Card style={{width: '20rem'}}>
                     <Card.Img variant='top' src={hour} />
                     <Card.Body>
@@ -54,11 +50,11 @@ const HomePage = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-            </Col>
+                </CardGroup>
 
 
                 <h1 style={{textAlign: 'center', paddingTop: '2rem', paddingBottom: '2rem'}}>Ссылки</h1>
-                <Col style={{justifyContent: 'center', display: 'flex'}}>
+                <CardGroup style={{display: 'flex'}}>
                     <Card style={{width: '20rem'}}>
                         <Card.Img variant='top' src={suport} />
                         <Card.Body>
@@ -71,9 +67,6 @@ const HomePage = () => {
                             <Button href="https://discord.com/api/oauth2/authorize?client_id=938854797690417283&permissions=1341061033078&scope=bot%20applications.commands" target='_blank' variant='success'>Пригласить</Button>
                         </Card.Body>
                     </Card>
-                </Col>
-
-                <Col style={{justifyContent: 'center', display: 'flex'}}>
                     <Card style={{width: '20rem'}}>
                         <Card.Img variant='top' src={suport} />
                         <Card.Body>
@@ -86,9 +79,6 @@ const HomePage = () => {
                                 <Button href='https://discord.gg/6PFKbRfkSy' target='_blank'>Войти</Button>
                         </Card.Body>
                     </Card>
-                </Col>
-
-                <Col style={{justifyContent: 'center', display: 'flex'}}>
                     <Card style={{width: '20rem'}}>
                         <Card.Img variant='top' src={suport} />
                         <Card.Body>
@@ -101,13 +91,13 @@ const HomePage = () => {
                             <Button href='https://t.me/alexthunder121' target='_blank'>Перейти</Button>
                         </Card.Body>
                     </Card>
-                </Col>
+                    </CardGroup>
             </Row>
         </Container>
 
         <Container>
             <Row>
-                <Col md={5} style={{justifyContent: 'center', display: 'flex'}}>
+                <Col md={5} style={{display: 'flex'}}>
                     <img src={suport} height={400} />
                 </Col>
                 <Col md={6}>

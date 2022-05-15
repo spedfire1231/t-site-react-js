@@ -30,7 +30,7 @@ const SearchByCategory = () => {
         <p className='mb-0'>
         <li>Стандартный префикс бота - !</li>
         </p>
-        <p><li>Всего команд - <strong>54</strong></li></p>
+        <p><li>Всего команд - <strong>56</strong></li></p>
         </Alert>
                     <select value={newvalue} onChange={onChangeCat} style={{width: '30rem', height: '35px', marginTop: '1rem', marginLeft: '10px'}}>
                         <option value='' disabled>Выберите раздел</option>
