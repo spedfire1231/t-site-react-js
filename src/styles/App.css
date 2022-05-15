@@ -1,16 +1,18 @@
 #root {
-    background: linear-gradient(to right, lightblue, lightgreen);
+    box-sizing: border-box;
+    background-image: linear-gradient(to right top, #ffffff, #f8f9ff, #eff3ff, #e4eeff, #d7e9ff, #d7e9ff, #d7e9ff, #d7e9ff, #e4eeff, #eff3ff, #f8f9ff, #ffffff);
+    background-size: 100%;
     width: 100%;
     height: inherit;
     box-sizing: inherit;
     flex-direction: column;
     bottom: 0;
-    position: sticky;
+    position: relative;
     margin: 0;
     padding: 0;
-    display: grid;
-    font-style: oblique 40deg;
-    font-family: cursive, serif;
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
 }
 
 .App {

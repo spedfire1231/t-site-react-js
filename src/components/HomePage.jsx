@@ -1,7 +1,9 @@
 import React from 'react';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
-import Slider from '../Slider/Slider';
-import suport from '../Slider/support1.jpg'
+import Slider from './Slider';
+import suport from './images/support1.jpg'
+import hour from './images/24h.jpg'
+import call from './images/Support.png'
 
 const HomePage = () => {
     return (
@@ -9,8 +11,54 @@ const HomePage = () => {
         <Slider />
         <Container style={{paddingTop: '2rem', paddingBottom: '2rem'}}>
             <Row>
+
+
+            <h1 style={{justifyContent: 'center', paddingTop: '2rem', paddingBottom: '2rem', display: 'flex'}}>Преимущества Бота</h1>
+            <Col style={{justifyContent: 'center', display: 'flex'}}>
+                <Card style={{width: '20rem', justifyContent: 'center'}}>
+                    <Card.Img variant='top' src={suport} />
+                    <Card.Body>
+                        <Card.Title>
+                            Бот в сети 24/7
+                        </Card.Title>
+                        <Card.Text>
+                            Timmy показывает ежедневную, стабильную, бесперебойную работу.
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+            </Col>
+
+            <Col style={{justifyContent: 'center', display: 'flex'}}>
+                <Card style={{width: '20rem' , justifyContent: 'center', display: 'flex'}}>
+                    <Card.Img variant='top' src={call} />
+                    <Card.Body>
+                        <Card.Title>
+                            Связь с разработчиком
+                        </Card.Title>
+                        <Card.Text>
+                            Вы всегда можете обратиться за помощью или предложением по улучшению к Ведущему Разработчику Бота.
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+            </Col>
+
+            <Col style={{justifyContent: 'center', display: 'flex'}}>
+                <Card style={{width: '20rem'}}>
+                    <Card.Img variant='top' src={hour} />
+                    <Card.Body>
+                        <Card.Title>
+                            Многофункциональность
+                        </Card.Title>
+                        <Card.Text>
+                            Бот имеет большое спектр полезных функций.
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+            </Col>
+
+
                 <h1 style={{textAlign: 'center', paddingTop: '2rem', paddingBottom: '2rem'}}>Ссылки</h1>
-                <Col>
+                <Col style={{justifyContent: 'center', display: 'flex'}}>
                     <Card style={{width: '20rem'}}>
                         <Card.Img variant='top' src={suport} />
                         <Card.Body>
@@ -25,7 +73,7 @@ const HomePage = () => {
                     </Card>
                 </Col>
 
-                <Col>
+                <Col style={{justifyContent: 'center', display: 'flex'}}>
                     <Card style={{width: '20rem'}}>
                         <Card.Img variant='top' src={suport} />
                         <Card.Body>
@@ -40,7 +88,7 @@ const HomePage = () => {
                     </Card>
                 </Col>
 
-                <Col>
+                <Col style={{justifyContent: 'center', display: 'flex'}}>
                     <Card style={{width: '20rem'}}>
                         <Card.Img variant='top' src={suport} />
                         <Card.Body>
@@ -59,12 +107,12 @@ const HomePage = () => {
 
         <Container>
             <Row>
-                <Col md={5}>
+                <Col md={5} style={{justifyContent: 'center', display: 'flex'}}>
                     <img src={suport} height={400} />
                 </Col>
                 <Col md={6}>
-                    <h2>Информация о Timmy</h2>
-                    <p>
+                    <h2 style={{justifyContent: 'center', display: 'flex'}}>Информация о Timmy</h2>
+                    <p style={{justifyContent: 'center', display: 'flex'}}>
                         Timmy - Многофункциональный бот в Discord который всегда поможет Вашему серверу.
                         Тимми имеет много различных команд от системы модерации до Музыкальной. Уровни чатинга и многое другое.
                         Бот доступен 24/7 не смотря на погоду или время суток. Разработчик всегда ответит на Ваши вопросы.
